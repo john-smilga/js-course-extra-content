@@ -5,19 +5,18 @@ window.addEventListener('load', function () {
   // your code goes here
 });
 
-
-
 */
 
-window.addEventListener('DOMContentLoaded', function () {
-  console.log('I will run first');
+window.addEventListener('load', function () {
+  console.log('I will run second');
   const img = document.querySelector('img');
   console.log(img);
   console.log(img.width);
 });
 
-window.addEventListener('load', function () {
-  console.log('I will run second');
+window.addEventListener('DOMContentLoaded', function () {
+  console.log('DOMContentLoaded I will run first');
+
   const img = document.querySelector('img');
   console.log(img);
   console.log(img.width);

@@ -1,24 +1,20 @@
 /* 
-The load event is fired when the whole page has loaded, including all dependent resources such as stylesheets and images. This is in contrast to DOMContentLoaded, which is fired as soon as the page DOM has been loaded, without waiting for resources to finish loading.
+Scroll Event - on element or document 
 
-window.addEventListener('load', function () {
-  // your code goes here
+  window.addEventListener('scroll', function () {
+  console.log(window.scrollY + 'px');
+  console.log(window.scrollX + 'px');
 });
 
+document
+
+scrollY - returns the number of pixels the document is currently scrolled along the vertical axis (pageYOffset)
 
 
+scrollX - returns the number of pixels scrolled along the horizontal axis (pageXOffset)
 */
 
-window.addEventListener('DOMContentLoaded', function () {
-  console.log('I will run first');
-  const img = document.querySelector('img');
-  console.log(img);
-  console.log(img.width);
-});
-
-window.addEventListener('load', function () {
-  console.log('I will run second');
-  const img = document.querySelector('img');
-  console.log(img);
-  console.log(img.width);
+window.addEventListener('scroll', function () {
+  console.log(window.scrollY + 'px');
+  console.log(window.scrollX + 'px');
 });
