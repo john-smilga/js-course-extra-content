@@ -5,10 +5,11 @@
 // HTMLCollection =  array-like object
 // index, length property but not array methods (forEach)
 
-// querySelectorAll()
+// querySelectorAll() in most cases
 // NodeList - objects are collections of nodes
 // can run forEach
 // turn them into array - spread operator [...]
+// after that can use any array properties
 
 const headings = document.getElementsByTagName('h2');
 headings[0].style.color = 'red';
