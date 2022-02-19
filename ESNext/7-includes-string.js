@@ -7,22 +7,22 @@ const products = [
   { title: 'Leather Chair' },
 ];
 
-const text = 'ad';
+const text = 'a';
 
-const filteredProducts = products.filter((item) =>
-  item.title.toLowerCase().includes(text)
+const filteredProducts = products.filter((product) =>
+  product.title.toLowerCase().includes(text)
 );
 
 console.log(filteredProducts);
 
-const firstName = 'john';
+// const firstName = 'john';
 
-// console.log(firstName.includes('jo'));
+// const result = firstName.includes('j', 1);
 
-const product = {
-  title: 'Leather Chair',
-};
+// const product = {
+//   title: 'Leather Chair',
+// };
 
-// console.log(product.title.includes('Lea'));
+// const result = product.title.includes('le');
 
-// console.log(product.title.includes('t', 3));
+// console.log(result);
