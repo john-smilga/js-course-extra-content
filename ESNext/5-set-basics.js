@@ -22,7 +22,7 @@ unique.add(4);
 // const result = unique.delete('third');
 // console.log(result);
 
-// const result = unique.delete('fourth');
+const result = unique.delete('five');
 // console.log(result);
 
 const isValue = unique.has(4);

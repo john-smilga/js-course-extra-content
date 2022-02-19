@@ -10,8 +10,10 @@ const person = {
 };
 
 const result = Object.entries(person);
+// console.log(result);
 
 // map method
+
 const newResult = result.map((item) => {
   const [first, second] = item;
   // console.log(first, second);
@@ -22,6 +24,6 @@ const newResult = result.map((item) => {
 
 // for of
 for (const [first, second] of result) {
-  // const [first, second] = item;
+  // const  [first, second]= item;
   console.log(first, second);
 }

@@ -19,17 +19,14 @@ const products = [
   },
 ];
 
-// const companies = products.map((item) => {
-//   return item.company;
-// });
-
+// const companies = products.map((item) => item.company);
 // console.log(companies);
 
 // const uniqueCompanies = new Set(companies);
 // console.log(uniqueCompanies);
 
-// const finalCompanies = [...uniqueCompanies];
+// const finalCompanies = ['all', ...uniqueCompanies];
 // console.log(finalCompanies);
 
-const result = [...new Set(products.map((item) => item.company))];
+const result = ['all', ...new Set(products.map((item) => item.company))];
 console.log(result);
